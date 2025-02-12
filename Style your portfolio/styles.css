@@ -1,0 +1,96 @@
+body {
+    background-color:#f0f0f0;
+    font-family:Helvetica, sans-serif;
+    margin-bottom: 10%;
+}
+
+header {
+    /*background: url('header-bg.jpg') no-repeat center center/cover; /* Replace with an image */
+    background-color: #071952; /* Fallback color if no image */
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* Navigation Bar Styles */
+  nav {
+    text-align: center;
+    background-color: #088395;
+    padding: 15px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  nav ul li a:hover {
+    background-color: #EBF4F6;
+    color: #071952;
+  }
+
+  #about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and image */
+    background-color: #071952; /* Dark background */
+    color: #ffffff; /* Soft gold text */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+  /* Text Section */
+  #about-text {
+    max-width: 60%;
+  }
+  
+  #about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* Title color */
+  }
+  
+  #about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  /* Highlight Important Words */
+  #about-text strong {
+    color: #63d9eb; /* Gold highlight for keywords */
+  }
+  
+  /* Image Section */
+  #about-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Circular image */
+    border: 3px solid #d4c6a1;
+  }
+
