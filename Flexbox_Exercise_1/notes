@@ -1,0 +1,3 @@
+It took me less than an hour to fix the boxes. It would have been difficult without using different flex properties. 
+In my code, I applied display: flex along with flex-wrap to properly arrange the boxes according to my preference. 
+I also used justify-content: center for a better viewing experience.
