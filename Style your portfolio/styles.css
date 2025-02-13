@@ -1,20 +1,24 @@
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+  body {
     background-color:#f0f0f0;
     font-family:Helvetica, sans-serif;
     margin-bottom: 10%;
-}
+  }
 
-header {
-    /*background: url('header-bg.jpg') no-repeat center center/cover; /* Replace with an image */
-    background-color: #071952; /* Fallback color if no image */
+  header {
+    background-color: #071952; 
     color: white;
     text-align: center;
     padding: 20px 20px;
   }
   
   header h1 {
-    font-size: 2rem; /* Large font size */
-    font-weight: bold; /* Bold text */
+    font-size: 2rem; 
+    font-weight: bold; 
   }
   
   /* Navigation Bar Styles */
@@ -41,7 +45,7 @@ header {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: lighter;
     padding: 10px 15px;
     border-radius: 5px;
     transition: 0.3s ease-in-out;
@@ -56,9 +60,9 @@ header {
   #about-me {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between text and image */
-    background-color: #071952; /* Dark background */
-    color: #ffffff; /* Soft gold text */
+    justify-content: space-between; 
+    background-color: #071952; 
+    color: #ffffff; 
     padding: 40px;
     border-radius: 10px;
     max-width: 900px;
@@ -94,3 +98,138 @@ header {
     border: 3px solid #d4c6a1;
   }
 
+  /* Projects Section */
+#projects {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: left;
+  background-color: #EBF4F6; /* Light background */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table Header */
+th {
+  background-color: #071952; /* Dark blue */
+  color: white;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+
+/* Table Rows */
+td {
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border */
+}
+
+/* Alternate Row Colors */
+tr:nth-child(even) {
+  background-color: #d9f0f2; /* Light blue-gray for contrast */
+}
+
+/* Hover Effect */
+tr:hover {
+  background-color: #37B7C3; /* Highlight row on hover */
+  color: white;
+}
+
+/* Make Table Responsive */
+@media (max-width: 768px) {
+  table {
+    font-size: 1rem;
+  }
+  th, td {
+    padding: 8px;
+  }
+}
+#contact {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #EBF4F6; /* Light background */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds spacing between sections */
+}
+
+/* Label Styling */
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Input Fields & Textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  border: 2px solid #37B7C3;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Radio & Checkbox Styling */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Textarea Styling */
+textarea {
+  height: 100px;
+  resize: none; /* Prevent resizing */
+  color:#b2b2b2;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+  background-color: #071952; /* Dark Blue */
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+input[type="submit"]:hover {
+  background-color: #088395; /* Lighter Blue */
+}
+
+footer {
+  text-align: center; /* Centers the text */
+  font-size: 20px; /* Smaller font size */
+  display:block;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 50px;
+  background-color: #071952; /* Light background color */
+  border-top: 2px solid #37B7C3; /* Line above footer for separation */
+}
+
+#footer-name p{
+  margin:0;
+  padding: 0;
+  color:#f0f0f0;
+}
