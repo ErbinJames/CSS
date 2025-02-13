@@ -1,1 +1,2 @@
-This assignment took me 1 hour to 1.5 hours to make
+- This assignment took me 1 hour to 3 hours to make.
+- one of the challenges i faced is to align the forms on a clean and readable format. Also, my favorite style that I've added is the hover effect wherein the color of the buttons and the table change every time i point my cursor or click the buttons.
