@@ -7,6 +7,9 @@ html, body {
     background-color:#f0f0f0;
     font-family:Helvetica, sans-serif;
     margin-bottom: 10%;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   header {
@@ -21,7 +24,6 @@ html, body {
     font-weight: bold; 
   }
   
-  /* Navigation Bar Styles */
   nav {
     text-align: center;
     background-color: #088395;
@@ -33,7 +35,7 @@ html, body {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Center the nav items */
+    justify-content: center; 
     gap: 20px;
   }
   
@@ -51,7 +53,6 @@ html, body {
     transition: 0.3s ease-in-out;
   }
   
-  /* Hover Effect */
   nav ul li a:hover {
     background-color: #EBF4F6;
     color: #071952;
@@ -69,7 +70,6 @@ html, body {
     margin: 40px auto;
   }
   
-  /* Text Section */
   #about-text {
     max-width: 60%;
   }
@@ -77,159 +77,144 @@ html, body {
   #about-text h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #ffffff; /* Title color */
+    color: #ffffff; 
   }
   
   #about-text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
   }
   
-  /* Highlight Important Words */
   #about-text strong {
-    color: #63d9eb; /* Gold highlight for keywords */
+    color: #63d9eb; 
   }
   
-  /* Image Section */
   #about-image img {
     width: 180px;
     height: 180px;
-    border-radius: 50%; /* Circular image */
+    border-radius:50%; 
     border: 3px solid #d4c6a1;
   }
 
-  /* Projects Section */
-#projects {
-  max-width: 900px;
-  margin: 40px auto;
-  text-align: center;
-}
+  #projects {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+  }
 
-/* Table Styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-size: 1.1rem;
-  text-align: left;
-  background-color: #EBF4F6; /* Light background */
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-/* Table Header */
-th {
-  background-color: #071952; /* Dark blue */
-  color: white;
-  padding: 12px;
-  font-size: 1.2rem;
-}
-
-/* Table Rows */
-td {
-  padding: 10px;
-  border: 1px solid #ccc; /* Light border */
-}
-
-/* Alternate Row Colors */
-tr:nth-child(even) {
-  background-color: #d9f0f2; /* Light blue-gray for contrast */
-}
-
-/* Hover Effect */
-tr:hover {
-  background-color: #37B7C3; /* Highlight row on hover */
-  color: white;
-}
-
-/* Make Table Responsive */
-@media (max-width: 768px) {
   table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    text-align: left;
+    background-color: #EBF4F6; 
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  th {
+    background-color: #071952; 
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  td {
+    padding: 10px;
+    border: 1px solid #ccc; 
+  }
+  
+  tr:nth-child(even) {
+    background-color: #d9f0f2; 
+  }
+  
+  tr:hover {
+    background-color: #37B7C3; 
+    color: white;
+  }
+  #contact {
+    max-width: 880px;
+    margin: 0 auto;
+    background-color: #EBF4F6; 
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  #contact h2{
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+  }
+  
+  label {
     font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
   }
-  th, td {
-    padding: 8px;
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 97.5%;
+    padding: 10px;
+    border: 2px solid #37B7C3;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
   }
-}
-#contact {
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: #EBF4F6; /* Light background */
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Form Styling */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px; /* Adds spacing between sections */
-}
-
-/* Label Styling */
-label {
-  font-size: 1rem;
-  font-weight: bold;
-  display: block;
-  margin-top: 10px;
-}
-
-/* Input Fields & Textarea */
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 95%;
-  padding: 10px;
-  border: 2px solid #37B7C3;
-  border-radius: 5px;
-  font-size: 1rem;
-  margin-top: 5px;
-}
-
-/* Radio & Checkbox Styling */
-input[type="radio"],
-input[type="checkbox"] {
-  margin-right: 5px;
-}
-
-/* Textarea Styling */
-textarea {
-  height: 100px;
-  resize: none; /* Prevent resizing */
-  color:#b2b2b2;
-}
-
-/* Submit Button Styling */
-input[type="submit"] {
-  background-color: #071952; /* Dark Blue */
-  color: white;
-  font-size: 1.1rem;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-/* Hover Effect */
-input[type="submit"]:hover {
-  background-color: #088395; /* Lighter Blue */
-}
-
-footer {
-  text-align: center; /* Centers the text */
-  font-size: 20px; /* Smaller font size */
-  display:block;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  padding: 50px;
-  background-color: #071952; /* Light background color */
-  border-top: 2px solid #37B7C3; /* Line above footer for separation */
-}
-
-#footer-name p{
-  margin:0;
-  padding: 0;
-  color:#f0f0f0;
-}
+ 
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none; 
+    color:#000000;
+  }
+  
+  input[type="submit"] {
+    background-color: #071952; 
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #088395; 
+  }
+  footer {
+    text-align: center; 
+    font-size: 20px; 
+    display:block;
+    margin-top: 100px;
+    padding: 35px;
+    background-color: #071952; 
+    border-top: 2px solid #37B7C3; 
+  }
+  #footer-name p{
+    margin:0;
+    padding: 0;
+    color:#f0f0f0;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      font-size: 1rem;
+    }
+    th, td {
+      padding: 8px;
+    }
+  }
