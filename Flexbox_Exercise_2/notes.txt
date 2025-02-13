@@ -1,0 +1,9 @@
+During this challenge, I encountered difficulties in realigning and resizing the three boxes. 
+It was challenging to position them correctly while maintaining a responsive and visually balanced layout.
+
+To solve this issue, I utilized the browser's DevTools (Inspector). This tool was incredibly helpful in identifying misalignments 
+and areas where adjustments were needed. By inspecting the elements and tweaking the CSS properties in real time, I was able to 
+fine-tune the layout efficiently.
+
+Overall, the assignment took me approximately 1-2 hours to complete. Through this process, I reinforced my understanding 
+of Flexbox properties and debugging techniques, which will be valuable for future web development projects.
