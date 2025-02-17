@@ -1,0 +1,5 @@
+t took me 2-5 hours to complete this assignment. 
+It was a real challenge for my mind and skills as I worked to replicate the Bootstrap website. 
+There were times when I struggled to center the search bar, and I had to find a solution. I also faced difficulties remembering 
+how to use flex properly. But in the end, after 2-5 hours, I successfully created the website. At one point, 
+I even questioned whether I could finish the assignment, but I pushed myself harder and kept learning.
