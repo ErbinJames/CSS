@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 1px dotted red;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+}
+header {
+    border-bottom: 2px solid #b8b8b8;
+}
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    width: 1200px;
+    margin-top: 10px;
+    margin: auto;
+}
+
+nav img {
+    height: 30px;
+    width: 150px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.nav-items li {
+    color: #8f8d8d;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 5px;
+    margin-left: 20px; 
+}
+
+.search-input {
+    font-size: 14px;
+    padding: 6px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    outline: none;
+    height: 35px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.login-btn {
+    background: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-btn {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+main {
+    margin-top: 0;
+    display: flex;
+    align-items: center; 
+    width: 1200px;
+    margin: auto;
+}
+.sidebar-container {
+    position: static;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 180px;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.sidebar, .lower-sidebar, .last-sidebar {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; 
+}
+
+.lower-sidebar {
+    margin-top: 30px;
+}
+
+/* Add spacing between lower-sidebar and last-sidebar */
+.last-sidebar {
+    margin-top: 5px; /* You can adjust this value as needed */
+}
+
+.sidebar li, .lower-sidebar li, .last-sidebar li {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.label-title {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 5px;
+    margin-top: 25px; /* Add space before the label */
+}
+
+.right-containers{
+    margin-top: 0;
+    height:400px;
+    width: 1200px;
+    border-radius: 15px;
+}
