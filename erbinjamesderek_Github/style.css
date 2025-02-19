@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 1px dotted red;
+    box-sizing: border-box;
+}
+
+header {
+    height: 60px;
+    background-color: #25292E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures left and right navs are on opposite sides */
+    padding: 0 20px;
+}
+
+.left-navbar, 
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Left Nav */
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.left-nav li {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Right Nav */
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+body {
+    background-color: #0D1117;
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    margin-left: 15px;
+    width: 30px;
+    height: auto;
+}
+.arrow-down {
+    width: 15px;
+    height: auto;
+}
+/*styling for searchbar*/
+.searchbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #0D1117; 
+    border: 1px solid #818b98;
+    border-radius: 6px;
+    padding: 2px 6px;
+    width: 300px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px 30px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+.search-icon,
+.slash-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.search-icon{
+    left: 10px;
+}
+.slash-icon{
+    right: 3px;
+}
+/*buttons*/
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign-in, .sign-up {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.sign-up {
+    border: 1px solid #8B949E;
+}
